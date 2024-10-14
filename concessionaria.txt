@@ -1,0 +1,19 @@
+Nome tabella: auto_usate
+
+id                                      BIGINT              PRIMARY_KEY             AUTO_INCREMENT              NOT_NUL
+marca
+modello
+anno_immatricolazione
+km_percorsi
+cilindrata
+tipo_veicolo
+tipo_di_cambio
+tipo_di_carburante
+prezzo
+posti
+porte
+classe_emissione
+colore
+telaio
+targa
+

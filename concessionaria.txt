@@ -1,19 +1,21 @@
 Nome tabella: auto_usate
 
-id                                      BIGINT              PRIMARY_KEY             AUTO_INCREMENT              NOT_NUL
-marca
-modello
-anno_immatricolazione
-km_percorsi
-cilindrata
-tipo_veicolo
-tipo_di_cambio
-tipo_di_carburante
-prezzo
-posti
-porte
-classe_emissione
-colore
-telaio
-targa
+id                                      BIGINT              NOT_NULL            PRIMARY_KEY             AUTO_INCREMENT              
+marca                                   VARCHAR             NOT_NULL
+modello                                 VARCHAR             NOT_NULL
+anno_immatricolazione                   YEAR                NOT_NULL
+km_percorsi                             MEDIUM_INT          NOT_NULL
+cilindrata                              SMALL_INT           NULL
+tipo_veicolo                            VARCHAR             NOT_NULL
+tipo_di_cambio                          VARCHAR             NULL
+tipo_di_carburante                      VARCHAR             NULL
+prezzo                                  MEDIUM_INT          NOT_NULL
+posti                                   TINYINT             NULL
+porte                                   TINYINT             NULL
+classe_emissione                        CHAR(6)             NULL
+colore                                  VARCHAR             NULL
+numero_telaio                           CHAR(17)            NOT_NULL            UNIQUE
+targa                                   VARCHAR             NOT_NULL            UNIQUE
+descrizione                             TEXT                NULL
+condizione_usato                        VARCHAR             NULL
 
